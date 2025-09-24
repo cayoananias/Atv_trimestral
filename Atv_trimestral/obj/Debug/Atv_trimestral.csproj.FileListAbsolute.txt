@@ -1,0 +1,7 @@
+C:\Users\lab3139\source\repos\Atv_trimestral\Atv_trimestral\bin\Debug\Atv_trimestral.exe.config
+C:\Users\lab3139\source\repos\Atv_trimestral\Atv_trimestral\bin\Debug\Atv_trimestral.exe
+C:\Users\lab3139\source\repos\Atv_trimestral\Atv_trimestral\bin\Debug\Atv_trimestral.pdb
+C:\Users\lab3139\source\repos\Atv_trimestral\Atv_trimestral\obj\Debug\Atv_trimestral.csproj.AssemblyReference.cache
+C:\Users\lab3139\source\repos\Atv_trimestral\Atv_trimestral\obj\Debug\Atv_trimestral.csproj.CoreCompileInputs.cache
+C:\Users\lab3139\source\repos\Atv_trimestral\Atv_trimestral\obj\Debug\Atv_trimestral.exe
+C:\Users\lab3139\source\repos\Atv_trimestral\Atv_trimestral\obj\Debug\Atv_trimestral.pdb

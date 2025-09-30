@@ -49,7 +49,7 @@ namespace Atv_trimestral
             }
         }
 
-        static void AdicionarNaFila()
+        void AdicionarNaFila()
         {
             if (total >= fila.Length)
             {
@@ -82,7 +82,7 @@ namespace Atv_trimestral
             Console.WriteLine("Paciente adicionado a fila!");
         }
 
-        static void ListarFila()
+        void ListarFila()
         {
             if (total == 0)
             {
@@ -97,7 +97,7 @@ namespace Atv_trimestral
             }
         }
 
-        static void AlterarPaciente()
+        void AlterarPaciente()
         {
             Console.Write("Digite o número do paciente que quer alterar: ");
             int indice = int.Parse(Console.ReadLine()) - 1;
@@ -112,7 +112,7 @@ namespace Atv_trimestral
             }
         }
 
-        static void AtenderPaciente()
+        void AtenderPaciente()
         {
             if (total == 0)
             {
@@ -134,5 +134,6 @@ namespace Atv_trimestral
         }
     }
 }
+
 
 

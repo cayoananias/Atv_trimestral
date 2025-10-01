@@ -1,5 +1,6 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -12,8 +13,12 @@ namespace Atv_timestral1._8
         {
             Paciente[] fila = new Paciente[15];
             int total = 0;
+            Console.BackgroundColor = ConsoleColor.Black;
+            Console.ForegroundColor = ConsoleColor.DarkGreen;
 
-            Console.WriteLine("Bem vindo ao sistema Hospitalar v2.1");
+            Console.WriteLine("=======================================");
+            Console.WriteLine("Bem vindo ao sistema Hospitalar v2.2");
+            Console.WriteLine("=======================================");
             bool sair = false;
 
             while (!sair)
@@ -24,8 +29,9 @@ namespace Atv_timestral1._8
                 Console.WriteLine("3 - Alterar paciente");
                 Console.WriteLine("4 - Atender paciente");
                 Console.WriteLine("q - Sair");
+                Console.WriteLine("=======================================");
                 Console.Write("Escolha: ");
-                string opcao = Console.ReadLine();
+                string opcao = Console.ReadLine().ToLower();
 
                 switch (opcao)
                 {
@@ -116,6 +122,7 @@ namespace Atv_timestral1._8
                         break;
                     default:
                         Console.WriteLine("Opsie opção inválida! \n tente novamente");
+                        Console.Clear();
                         break;
                 }
             }

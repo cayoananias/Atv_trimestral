@@ -96,12 +96,23 @@ namespace Atv_timestral1._8
                         }
                         break;
                     case "4":
-                        Console.Clear();
-                        {
-                            Console.WriteLine("Nenhum paciente encontrado na fila!");
-                            return;
-                        }
+                         Console.Clear();
+                         if(total == 0){
+                     Console.WriteLine("Nenhum paciente encontrado na fila!");
+                                 }
+                                 else
+                             {
+                                         Console.WriteLine("Atendendo paciente, por favor espere");
+                                         fila[0].MostrarDados();
 
+                                     for (int i = 0; i < total - 1; i++)
+                                         {
+                                             fila[i] = fila[i + 1];
+                                          }
+                                                 fila[total - 1] = null;
+                                             total--;
+                                     Console.WriteLine("Paciente atendido com sucesso! :)");
+ }
                         Console.WriteLine("Atendendo paciente, por favor espere");
                         fila[0].MostrarDados();
 
@@ -129,4 +140,5 @@ namespace Atv_timestral1._8
         }
     }
 }
+
 

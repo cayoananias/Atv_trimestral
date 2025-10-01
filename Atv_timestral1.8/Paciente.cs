@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -30,7 +30,7 @@ namespace Atv_timestral1._8
             while (aux == 0)
             {
                 Console.WriteLine("\nExemplos de Preferenciais:");
-                Console.WriteLine("\nGravidas");
+                Console.WriteLine("\nGrávidas");
                 Console.WriteLine("\nIdosos(60+)");
                 Console.WriteLine("\nPessoas Com Deficiencia (PCD)");
                 Console.Write("\nO paciente é Preferencial? (s/n): ");
@@ -60,8 +60,10 @@ namespace Atv_timestral1._8
 
         public void MostrarDados()
         {
-            Console.WriteLine($"Nome: {nome}, CPF: {cpf}, Idade: {idade}, Preferencial: {(preferencial ? "Sim" : "Não")}");
+            Console.WriteLine("Nome: " + nome + ", CPF: " + cpf + ", Idade: " + idade + ", Preferencial: " + (preferencial ? "Sim" : "Não"));
         }
     }
 
 }
+
+

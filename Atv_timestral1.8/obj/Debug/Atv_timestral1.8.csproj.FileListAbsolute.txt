@@ -1,0 +1,7 @@
+C:\Users\lab3127\Desktop\Atv_timestral1.8\Atv_timestral1.8\obj\Debug\Atv_timestral1.8.csproj.AssemblyReference.cache
+C:\Users\lab3127\Desktop\Atv_timestral1.8\Atv_timestral1.8\obj\Debug\Atv_timestral1.8.csproj.CoreCompileInputs.cache
+C:\Users\lab3127\Desktop\Atv_timestral1.8\Atv_timestral1.8\bin\Debug\Atv_timestral1.8.exe.config
+C:\Users\lab3127\Desktop\Atv_timestral1.8\Atv_timestral1.8\bin\Debug\Atv_timestral1.8.exe
+C:\Users\lab3127\Desktop\Atv_timestral1.8\Atv_timestral1.8\bin\Debug\Atv_timestral1.8.pdb
+C:\Users\lab3127\Desktop\Atv_timestral1.8\Atv_timestral1.8\obj\Debug\Atv_timestral1.8.exe
+C:\Users\lab3127\Desktop\Atv_timestral1.8\Atv_timestral1.8\obj\Debug\Atv_timestral1.8.pdb

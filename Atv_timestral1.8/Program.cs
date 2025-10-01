@@ -17,7 +17,7 @@ namespace Atv_timestral1._8
             Console.ForegroundColor = ConsoleColor.DarkGreen;
 
             Console.WriteLine("=======================================");
-            Console.WriteLine("Bem vindo ao sistema Hospitalar v2.2");
+            Console.WriteLine("Bem vindo ao sistema Hospitalar v2.3");
             Console.WriteLine("=======================================");
             bool sair = false;
 
@@ -129,3 +129,4 @@ namespace Atv_timestral1._8
         }
     }
 }
+

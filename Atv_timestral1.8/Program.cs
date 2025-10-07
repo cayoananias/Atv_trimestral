@@ -126,19 +126,11 @@ namespace Atv_timestral1._8
                       Console.WriteLine("Paciente atendido com sucesso! :)");
                 
                     break;
-                    case "q":
-                        Console.Clear();
-                        sair = true;
-                        Console.WriteLine("Adeus....");
-                        break;
-                    default:
-                        Console.WriteLine("Opsie opção inválida! \n tente novamente");
-                        Console.Clear();
-                        break;
                 }
             }
         }
     }
 }
+
 
 

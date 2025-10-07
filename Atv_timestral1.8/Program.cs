@@ -17,7 +17,7 @@ namespace Atv_timestral1._8
             Console.ForegroundColor = ConsoleColor.DarkGreen;
 
             Console.WriteLine("=======================================");
-            Console.WriteLine("Bem vindo ao sistema Hospitalar v2.3");
+            Console.WriteLine("Bem vindo ao sistema Hospitalar v2.7");
             Console.WriteLine("=======================================");
             bool sair = false;
 
@@ -37,52 +37,59 @@ namespace Atv_timestral1._8
                 {
                     case "1":
                         Console.Clear();
-                            if (total >= fila.Length)
-                            {
-                                Console.WriteLine("Fila cheia! por favor atenda pacientes e tente novamente");
-                                return;
-                            }
+                        if (total >= fila.Length)
+                        {
+                            Console.WriteLine("Fila cheia! por favor atenda pacientes e tente novamente");
+                            return;
+                        }
 
-                            Paciente novo = new Paciente();
-                            novo.AdicionarDados();
+                        Paciente novo = new Paciente();
+                        novo.AdicionarDados();
 
-                            if (novo.preferencial)
+                        if (novo.preferencial)
+                        {
+                            int pos = 0;
+                            while (pos < total && fila[pos].preferencial)
                             {
-                                int pos = 0;
-                                while (pos < total && fila[pos].preferencial)
-                                {
-                                    pos++;
-                                }
-                                for (int i = total; i > pos; i--)
-                                {
-                                    fila[i] = fila[i - 1];
-                                }
-                                fila[pos] = novo;
+                                pos++;
                             }
-                            else
+                            for (int i = total; i > pos; i--)
                             {
-                                fila[total] = novo;
+                                fila[i] = fila[i - 1];
                             }
+                            fila[pos] = novo;
+                        }
+                        else
+                        {
+                            fila[total] = novo;
+                        }
 
-                            total++;
-                            Console.WriteLine("Paciente adicionado a fila!");
+                        total++;
+                        Console.WriteLine("Paciente adicionado a fila!");
                         Console.Clear();
                         break;
                     case "2":
                         Console.Clear();
                         if (total == 0)
                         {
+                            Console.Clear();
                             Console.WriteLine("Nenhum paciente encontrado na fila.");
                         }
 
                         for (int i = 0; i < total; i++)
                         {
+                            Console.Clear();
                             Console.Write($"{i + 1} - ");
                             fila[i].MostrarDados();
                         }
                         break;
                     case "3":
                         Console.Clear();
+                        if(total==0){
+                            Console.Clear();
+                            Console.WriteLine("Não há pacientes para alterar\nadicione um e tente novamente");
+                            break;
+                        }
                         Console.Write("Digite o número do paciente que quer alterar: ");
                         int indice = int.Parse(Console.ReadLine()) - 1;
                         if (indice >= 0 && indice < total)
@@ -96,41 +103,46 @@ namespace Atv_timestral1._8
                         }
                         break;
                     case "4":
-                         Console.Clear();
-                         if(total == 0){
-                     Console.WriteLine("Nenhum paciente encontrado na fila!");
-                                 }
-                                 else
-                             {
-                                         Console.WriteLine("Atendendo paciente, por favor espere");
-                                         fila[0].MostrarDados();
-
-                                     for (int i = 0; i < total - 1; i++)
-                                         {
-                                             fila[i] = fila[i + 1];
-                                          }
-                                                 fila[total - 1] = null;
-                                             total--;
-                                     Console.WriteLine("Paciente atendido com sucesso! :)");
- }
-                        Console.WriteLine("Atendendo paciente, por favor espere");
-                        fila[0].MostrarDados();
-
-                        for (int i = 0; i < total - 1; i++)
+                        Console.Clear();
+                        if (total == 0)
                         {
-                            fila[i] = fila[i + 1];
+                            Console.WriteLine("Nenhum paciente encontrado na fila!");
                         }
-                        fila[total - 1] = null;
-                        total--;
+                        else
+                        {
+                            Console.WriteLine("Atendendo paciente, por favor espere");
+                            fila[0].MostrarDados();
 
-                      Console.WriteLine("Paciente atendido com sucesso! :)");
-                
-                    break;
+                            for (int i = 0; i < total - 1; i++)
+                            {
+                                fila[i] = fila[i + 1];
+                            }
+                            fila[total - 1] = null;
+                            total--;
+                            Console.WriteLine("Paciente atendido com sucesso! :)");
+                        }
+                            break;
+                        
+                    case "q":
+                        Console.Clear();
+                        sair = true;
+                        Console.WriteLine("Adeus....");
+                        break;
+                    default:
+                        Console.WriteLine("Opsie opção inválida! \n tente novamente");
+                        Console.Clear();
+                        break;
                 }
             }
         }
     }
 }
+
+
+
+
+
+
 
 
 
